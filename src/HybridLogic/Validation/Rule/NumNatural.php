@@ -20,7 +20,7 @@ class NumNatural implements \HybridLogic\Validation\Rule, \HybridLogic\Validatio
 	 * @return bool True if rule passes
 	 **/
 	public function validate($field, $value, $validator) {
-		if(!ctype_digit($value)) return false;
+		if(!is_numeric($value)) return false;
 		return $value >= 0;
 	} // end func: validate
 
@@ -35,7 +35,8 @@ class NumNatural implements \HybridLogic\Validation\Rule, \HybridLogic\Validatio
 	 * @return string Error message
 	 **/
 	public function get_error_message($field, $value, $validator) {
-		return $validator->get_label($field) . ' must be a whole number greather than or equal to zero';
+//		return $validator->get_label($field) . ' must be a whole number greather than or equal to zero';
+        return 'not_a_natural_number';
 	} // end func: get_error_message
 
 

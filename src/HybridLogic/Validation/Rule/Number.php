@@ -34,7 +34,8 @@ class Number implements \HybridLogic\Validation\Rule, \HybridLogic\Validation\Cl
 	 * @return string Error message
 	 **/
 	public function get_error_message($field, $value, $validator) {
-		return $validator->get_label($field) . ' must be a number';
+//		return $validator->get_label($field) . ' must be a number';
+        return 'not_a_number';
 	} // end func: get_error_message
 
 

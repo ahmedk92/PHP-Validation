@@ -52,7 +52,8 @@ class MaxLength implements \HybridLogic\Validation\Rule, \HybridLogic\Validation
 	 * @return string Error message
 	 **/
 	public function get_error_message($field, $value, $validator) {
-		return $validator->get_label($field) . " cannot be longer than {$this->length} characters in length";
+//		return $validator->get_label($field) . " cannot be longer than {$this->length} characters in length";
+        return 'above_max_length';
 	} // end func: get_error_message
 
 

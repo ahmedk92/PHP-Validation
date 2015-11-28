@@ -1,3 +1,9 @@
+Purpose of Fork
+===============
+
+Changing readable error messages to code-like messages.
+Also some compatibility changes like `is_numeric` instead of `ctype_digit`.
+
 Validation Library
 ==================
 
